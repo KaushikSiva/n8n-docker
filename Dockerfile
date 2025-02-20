@@ -1,5 +1,5 @@
 # Use the official n8n image
-FROM n8n/n8n:latest
+FROM n8nio/n8n:latest
 
 # Expose the port n8n runs on
 EXPOSE 5678
