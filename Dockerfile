@@ -1,5 +1,9 @@
-# Use the official n8n image from Docker Hub
-FROM docker.n8n.io/n8nio/n8n
+FROM n8nio/n8n:latest
 
-# Expose the necessary port for n8n
+VOLUME /data
+
+# Expose the port
 EXPOSE 5678
+
+# Start n8n
+CMD ["n8n", "start"]
